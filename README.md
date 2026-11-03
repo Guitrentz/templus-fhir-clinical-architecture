@@ -15,10 +15,12 @@
 
 **Templus** (`templ.us`) is a multi-tenant, high-acuity Electronic Health Record (EHR), Perioperative Surgical Suite, and Healthcare ERP designed for outpatient surgical centers, oral & maxillofacial practices, facial aesthetic clinics, and multi-disciplinary medical-dental groups.
 
-### Specification-Driven Agentic Engineering
-This system is architected by a practicing Senior Dental & Facial Surgeon (`18+ years` of clinical and operating room experience) acting as **Clinical Product Lead and Health Informatics Practitioner**:
-* **Domain & Clinical Architecture:** Every clinical workflow, perioperative safety interlock, semantic binding (`HL7 FHIR R4/R5`, `SNOMED CT`, `ISO 3950`), and regulatory constraint (`HIPAA`, `FDA Non-Device CDS`, `EU MDR`, `ANVISA SaMD`) is specified from real-world surgical and outpatient operations.
-* **Agentic Execution with Deterministic Guardrails:** Software engineering artifacts, multi-tenant SQL schemas, and interoperability adapters are orchestrated through autonomous AI agents (`Google Antigravity & Gemini`) coupled to an executable [Deterministic Clinical Harness](https://github.com/Guitrentz/clinical-ai-deterministic-harness) that enforces mathematical checksums, static security gates (AST/SAST), and strict schema contracts before any commit.
+### Clinical Macro & Micromanagement of AI Engineering Agents
+> **Transparency Note on Authorship:** I am a practicing Senior Dental & Facial Surgeon (`18+ years` of clinical and surgical experience) with a **foundational background in Health Informatics** (*SNOMED CT Foundation Certified*, 2026; foundational *HL7 FHIR* concepts) — **not** a career software developer, DBA, or senior FHIR systems engineer.
+>
+> All technical artifacts, database schemas, and architectural blueprints in this project were built by **actively directing autonomous AI coding agents (`Google Antigravity & Gemini`) through hands-on macro and micromanagement**:
+* **Macro Direction (Clinical Product & Safety Vision):** I define the real-world clinical requirements, perioperative safety interlocks, zero-training UX budget (`<= 3 clicks`), and the strategic decision to anchor the system on international standards (`HL7 FHIR`, `SNOMED CT`, `ISO 3950`, `HIPAA`, `LGPD`) with pluggable country adapters.
+* **Micro Direction (Step-by-Step Auditing & Guardrails):** The AI agents generate the underlying multi-tenant `PostgreSQL (RLS)` schemas, `HL7 FHIR` resource mappings, and code, while I continuously review, question, test, and refine every workflow from a clinician's perspective—instructing the AI to build an executable [Deterministic Clinical Harness](https://github.com/Guitrentz/clinical-ai-deterministic-harness) so its own outputs remain verified and hallucination-free.
 
 > **Intellectual Property Notice:** This public repository publishes the system's **Hexagonal Architectural Blueprints, Semantic Interoperability Patterns, Architecture Decision Records (ADRs), and Release Changelogs**. Proprietary commercial source code and production multi-tenant SQL implementations reside in private repositories.
 
