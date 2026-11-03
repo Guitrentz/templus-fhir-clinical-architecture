@@ -11,6 +11,8 @@
 
 ## 1. Architectural Vision & Authoring Methodology
 
+> While already developing our clinical platform under a country-specific lens, I saw that local rules inside the core blocked global interoperability. I decided to start from zero around a Universal Core with pluggable Country Packs. Using step-by-step AI orchestration and deterministic guardrails, I anchored the core on HL7 FHIR and SNOMED CT, locking a 49-table universal blueprint and a 65-system migration spec before writing code.
+
 **Templus** (`templ.us`) is a multi-tenant, high-acuity Electronic Health Record (EHR), Perioperative Surgical Suite, and Healthcare ERP designed for outpatient surgical centers, oral & maxillofacial practices, facial aesthetic clinics, and multi-disciplinary medical-dental groups.
 
 ### Specification-Driven Agentic Engineering
