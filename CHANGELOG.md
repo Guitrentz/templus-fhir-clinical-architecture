@@ -2,6 +2,16 @@
 
 All notable architectural and clinical engineering milestones for **Templus** are documented in this file.
 
+## [v0.3.1-alpha] - 2026-11-03
+
+### Added
+* **Phase II: Module 1 Fractal Atomic Specification Completed (`13 Atomic Units / 26 Paired Specs`):**
+  * Decomposed **Module 1 (Platform Foundation, Zero-Trust Security, Clinical Shell & Governance)** into **13 Atomic Units (`1.1.A` to `1.6.B`)**, pairing 13 jurisdiction-agnostic **Universal Core specifications (`en-US`)** with 13 **Country Pack adapter specifications** ([ADR-004](./docs/adr/ADR-004-fractal-atomic-specification-m1-foundation.md)).
+  * **Semantic & Financial Precision (`1.1.A–1.1.C`):** Locked `HL7 FHIR R5 MonetaryComponent` (6-decimal precision), `UCUM` physical units, `SNOMED CT` Verhoeff dihedral $D_5$ validation, and `ISO 3950` craniofacial/dental anatomical schemas with deterministic national terminology crosswalk ports.
+  * **Zero-Trust Clinical Security (`1.2.A–1.2.B`):** Specified `PostgreSQL Row-Level Security (RLS)` tenant isolation, `WORM` cryptographic hash-chained audit trails (20-year medical record retention), `AES-256-GCM` envelope encryption with AAD, and `HMAC-SHA256` blind indexing for sub-millisecond encrypted PHI search.
+  * **Zero-Training 7-Pillar Shell & Chairside Dual-Auth (`1.3.A–1.4.B`):** Specified the global 7-Pillar navigation shell (`<= 3 clicks` interaction budget, `Cmd+K` palette), fast chairside/OR `PIN` session switching, and provider license/delegation interlocks.
+  * **Chameleon Specialty Onboarding & OR Asset Governance (`1.5.A–1.6.B`):** Specified specialty-adaptive clinic onboarding, surgical room/equipment maintenance interlocks (`FDA UDI` / `ANVISA`), and multi-unit FinOps governance.
+
 ## [v0.3.0-alpha] - 2026-11-03
 
 ### Added
