@@ -2,6 +2,18 @@
 
 All notable architectural and clinical engineering milestones for **Templus** are documented in this file.
 
+## [v0.3.2-alpha] - 2026-11-04
+
+### Added
+* **Phase II: Module 2 Fractal Atomic Specification Completed (`8 Atomic Units / 16 Paired Specs`):**
+  * Decomposed **Module 2 (Multi-Resource Scheduling, Chair/OR Flow, Digital Check-In, Zero-PHI CRM & Unified Patient Inbox)** into **8 Atomic Units (`2.1.A` to `2.4.B`)**, pairing 8 **Universal Core specifications (`en-US`)** with 8 **Country Pack adapter specifications** ([ADR-005](./docs/adr/ADR-005-zero-phi-crm-gist-scheduling-and-postop-recall-m2.md)). Combined with Module 1, **21 Atomic Units (`42 Paired Specifications`)** are now locked prior to application code.
+  * **Multi-Resource GiST Scheduling & Chair Flow (`2.1.A–2.1.B`):** Specified PostgreSQL `EXCLUDE USING gist` temporal-spatial constraints across providers, operating rooms/chairs, and shared equipment, paired with real-time chair flow tracking, smart waitlist backfill, and no-show deposit rules.
+  * **Digital Check-In & Pre-Procedure Safety Gates (`2.2.A–2.2.B`):** Specified pre-arrival mobile check-in, tablet kiosk mode, voice intake with side-by-side diff reconciliation, and pre-procedure clinical risk assessments (`ASA`, allergies, anticoagulants) with provider delegation gates.
+  * **Zero-PHI Growth CRM & Post-Operative Surgical Recall (`2.3.A–2.3.B`):** Enforced strict database segregation between commercial `crm_leads` (Zero-PHI) and clinical `patients`, alongside automated post-operative surgical monitoring (`D+1`, `D+3`, `D+7` red-flag triage) and longitudinal clinical recall.
+  * **Unified WORM Inbox & Hexagonal Messaging Port (`2.4.A–2.4.B`):** Specified `WORM` immutable patient communication logs, PHI-masked notifications with `Magic Link` portal handoff, and `Port 3` messaging/postal webhook adapters.
+* **Clinical AI Research Dossier (`Module 3 Prep`):**
+  * Completed the scientific and architectural foundation dossier for the **Ambient Clinical Scribe (`SOAP` Zero Clinical Confabulation & Deterministic `SNOMED CT` Encoding)**.
+
 ## [v0.3.1-alpha] - 2026-11-03
 
 ### Added
