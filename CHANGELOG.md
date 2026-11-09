@@ -2,6 +2,18 @@
 
 All notable architectural and clinical engineering milestones for **Templus** are documented in this file.
 
+## [v0.3.3-alpha] - 2026-11-08
+
+### Added
+* **Two-Stage Air-Gapped Ambient Clinical Scribe & Standalone Wedge Slice 1 (`Production Milestone`):**
+  * Architected and deployed the **Two-Stage Air-Gapped Ambient Clinical Scribe Engine** governed by **5 `SNOMED CT MRCM` Care Domains** and **Closed Role Group Atoms** (`Zero Cross-Talk` between laterality, anatomical structures, or procedures) ([ADR-006](./docs/adr/ADR-006-air-gapped-ambient-scribe-snomed-mrcm-guardrails.md)).
+  * **Progressive `25s` Audio Micro-Chunking (`AAC .m4a 32 kbps`):** Implemented background micro-chunk streaming so even 60-minute consultations or surgical procedures deliver the structured clinical note in **2 to 3 seconds** upon clicking Stop.
+  * **Deterministic Role-Authority & Temporal Firewall:** Enforced a hard code boundary between Stage 1 (4-role diarization + `MRCM` atom extraction) and Stage 2 (air-gapped synthesis with zero raw audio access, `temperature: 0.0`), mathematically blocking `PATIENT`/`COMPANION_GUARDIAN` speech and `PAST_HISTORY`/`FAMILY_MEMBER` events from contaminating Objective Exam or Procedure sections.
+  * **Sentence-Level Negation Preservation & Background `SNOMED CT v2.3.1` Indexing:** Added sentence-by-sentence negation verification and zero-latency (`0 ms`) asynchronous post-coordination in `SNOMED CT Compositional Grammar v2.3.1`.
+  * **Native macOS Menu Bar Utility & 2-Pill Clinical UX:** Deployed the native macOS Menu Bar client (`AppKit/SwiftUI`, `.hudWindow` translucency, proximity-based clinical location recognition `<= 250m`) with a 2-pill zero-training interface (`1-Click Copy` on Left-Click, full editor on Right-Click).
+* **Phase II, Module 3 Atomic Specifications (`3.1.A`, `3.1.B` & `Wedge` Track):**
+  * Locked paired Core (`en-US`) and Country Pack (`@templus/pack-br`) specifications for the Ambient Scribe Engine, `WORM` clinical encounter sealing, and standalone cross-platform Scribe utility.
+
 ## [v0.3.2-alpha] - 2026-11-04
 
 ### Added

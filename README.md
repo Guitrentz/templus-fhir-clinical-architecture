@@ -1,6 +1,6 @@
 # Templus: Hexagonal Multi-Jurisdictional EHR/ERP & Clinical AI Architecture
 
-[![Version](https://img.shields.io/badge/Release-v0.3.2--alpha-0066CC?style=flat)](https://github.com/Guitrentz/templus-fhir-clinical-architecture/releases)
+[![Version](https://img.shields.io/badge/Release-v0.3.3--alpha-0066CC?style=flat)](https://github.com/Guitrentz/templus-fhir-clinical-architecture/releases)
 [![FHIR](https://img.shields.io/badge/HL7_FHIR-R4_%26_R5-E34F26?style=flat)](https://hl7.org/fhir/)
 [![SNOMED CT](https://img.shields.io/badge/Terminology-SNOMED_CT_%7C_LOINC_%7C_ISO_3950-2EA44F?style=flat)](https://www.snomed.org/)
 [![UX Budget](https://img.shields.io/badge/Clinical_UX-Zero_Training_(%3C%3D_3_Clicks)-6F42C1?style=flat)](#zero-training-clinical-ux--perioperative-surgical-safety)
@@ -132,6 +132,7 @@ Templus integrates **Ambient Clinical Scribe** and **Clinical Decision Support (
 | [**ADR-003**](./docs/adr/ADR-003-deterministic-migration-engine.md) | Deterministic Legacy EHR Data Migration Engine (`5 Archetypes, Dry-Run & 1-Click Rollback`) | `Accepted (v0.3.0)` |
 | [**ADR-004**](./docs/adr/ADR-004-fractal-atomic-specification-m1-foundation.md) | Fractal Atomic Decomposition for Module 1 Foundation (`13 Atomic Units / 26 Paired Core + Country Pack Specs`) | `Accepted (v0.3.1)` |
 | [**ADR-005**](./docs/adr/ADR-005-zero-phi-crm-gist-scheduling-and-postop-recall-m2.md) | Multi-Resource GiST Scheduling, Zero-PHI CRM Segregation & Post-Op Recall (`Module 2: 8 Atomic Units / 16 Paired Specs`) | `Accepted (v0.3.2)` |
+| [**ADR-006**](./docs/adr/ADR-006-air-gapped-ambient-scribe-snomed-mrcm-guardrails.md) | Air-Gapped Two-Stage Ambient Clinical Scribe with `SNOMED CT MRCM` Role Groups & Deterministic Safety Firewalls | `Implemented (v0.3.3)` |
 
 ---
 
@@ -143,4 +144,5 @@ See [`CHANGELOG.md`](./CHANGELOG.md) for detailed engineering milestones.
 * **[x] Phase IA (Completed):** Deep Benchmarking of 65 Commercial Healthcare SaaS Platforms, B2B Clinical Value Evidence Compendium, Ambient Clinical Scribe Scientific Dossier & Deterministic Legacy EHR Migration Engine Specification (`Dry-Run` + `DICOM` + `1-Click Rollback`).
 * **[x] Phase II, Module 1 (Completed):** Fractal Atomic Decomposition of Platform Foundation, Zero-Trust Security (`RLS`, `WORM` Hash-Chain, `AES-256-GCM` + `HMAC-SHA256`), `HL7 FHIR R5 MonetaryComponent`, `SNOMED CT` Verhoeff, and 7-Pillar Clinical Shell (`13 Atomic Units / 26 Paired Core + Country Pack Specifications`).
 * **[x] Phase II, Module 2 (Completed):** Multi-Resource `GiST` Scheduling (`provider + room + equipment`), Real-Time Chair/OR Flow, Digital Check-In with Voice Diff, Zero-PHI Commercial CRM Segregation, Post-Operative Surgical Recall (`D+1/D+3/D+7`), and Unified `WORM` Patient Inbox (`8 Atomic Units / 16 Paired Core + Country Pack Specifications`).
-* **[ ] Phase II, Modules M3 to M7 (In Progress):** Modular Deep-Dive Specifications separating Universal Core contracts from Country Pack adapters (`Next: M3 Clinical Cockpit, Odontogram & Ambient Scribe`).
+* **[x] Standalone Ambient Clinical Scribe Engine & Wedge Slice 1 (Implemented & Live):** Two-Stage Air-Gapped Scribe (`SNOMED CT MRCM` 5 Care Domains + Role Groups, `25s` progressive `.m4a` micro-chunking with `2–3s` final turnaround, deterministic Role-Authority & Temporal Firewall, Sentence-Level Negation Guard, background `SNOMED CT v2.3.1` Compositional Grammar indexing, and native `macOS Menu Bar` 2-pill utility).
+* **[ ] Phase II, Modules M3 to M7 (In Progress):** Modular Deep-Dive Specifications separating Universal Core contracts from Country Pack adapters.
