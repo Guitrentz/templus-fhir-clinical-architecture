@@ -1,8 +1,8 @@
 # ADR-006: Air-Gapped Two-Stage Ambient Clinical Scribe with `SNOMED CT MRCM` Role Groups and Deterministic Safety Firewalls
 
-* **Status:** Accepted & Implemented in Production (`v0.3.3-alpha`)
+* **Status:** R&D Prototype Tested Locally (`v0.3.3-alpha`)
 * **Date:** 2026-11-08
-* **Author:** Guilherme Trentini, DDS (Clinical Product Lead & Health Informatics Practitioner, directing AI agents via Clinical Macro/Micromanagement)
+* **Author:** Guilherme Trentini, DDS (Senior Dental & Facial Surgeon | Clinical Product & Health Informatics R&D, prototyping via Multi-Agent AI)
 
 ---
 
@@ -19,7 +19,7 @@ First-generation Ambient AI Scribes rely on a single end-to-end LLM prompt that 
 
 ## Decision
 
-We architected and deployed a **Two-Stage Air-Gapped Ambient Clinical Scribe Engine** governed by **5 deterministic clinical informatics invariants**:
+As part of my hands-on Health Informatics R&D, I directed a multi-agent AI workflow to prototype and test a **Two-Stage Air-Gapped Ambient Clinical Scribe** governed by **5 deterministic clinical guardrails**:
 
 ```mermaid
 flowchart LR
@@ -36,7 +36,7 @@ flowchart LR
 * Even in a 60-minute consultation or surgical procedure, prior segments are already extracted while the encounter is underway. Clicking **Stop** processes only the final tail, delivering the completed clinical note in **2 to 3 seconds** with identical behavior across desktop (`macOS Menu Bar` / `Windows Tray`), web kiosk, and mobile devices.
 
 ### 2. Zero-Selector Multi-Disciplinary Detection via 5 `SNOMED CT MRCM` Domains
-* We eliminated manual specialty dropdowns and visible coding lists. Stage 1 automatically classifies clinical facts across all healthcare disciplines (Medicine, Surgery, Oral & Maxillofacial / Dentistry, Nursing, Physical Therapy, Speech Therapy, Psychology, Nutrition, and Occupational Therapy) using the **5 care domains of the `SNOMED CT Machine Readable Concept Model (MRCM)`**:
+* To avoid cluttering the screen with manual specialty dropdowns and visible coding lists, I configured Stage 1 to classify clinical facts across healthcare disciplines (Medicine, Surgery, Oral & Maxillofacial / Dentistry, Nursing, Physical Therapy, Speech Therapy, Psychology, Nutrition, and Occupational Therapy) using the **5 care domains of the `SNOMED CT Machine Readable Concept Model (MRCM)`**:
   * `CLINICAL_FINDING` (`<<404684003 |Clinical finding|`)
   * `PROCEDURE_INTERVENTION` (`<<71388002 |Procedure|`)
   * `OBSERVABLE_PARAMETER` (`<<363787002 |Observable entity|`)
