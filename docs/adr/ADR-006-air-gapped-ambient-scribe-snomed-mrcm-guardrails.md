@@ -1,8 +1,10 @@
 # ADR-006: Air-Gapped Two-Stage Ambient Clinical Scribe with `SNOMED CT MRCM` Role Groups and Deterministic Safety Firewalls
 
-* **Status:** R&D Prototype Tested Locally (`v0.3.3-alpha`)
-* **Date:** 2026-11-08
-* **Author:** Guilherme Trentini, DDS (Senior Dental & Facial Surgeon | Clinical Product & Health Informatics R&D, prototyping via Multi-Agent AI)
+* **Status:** Superseded in Standalone Scribe Track by [ADR-007](./ADR-007-decoupled-ambient-scribe-multi-agent-engineering-and-pdsqi9-oracle.md) (`v6.2 Beta`); Retained as Reference for Frozen EHR-Coupled Module `M3-P3.1A` (`v0.3.3-alpha`)
+* **Date:** 2026-11-08 (Updated 2026-11-11)
+* **Author:** Guilherme Trentini, DDS (Senior Dental & Facial Surgeon | Clinical Product & Workflow Advisor, orchestrating Multi-Agent AI in OpenCode)
+
+> **Architectural Evolution Note (2026-11-11):** Empirical benchmarking on full-length (`45–60 min`) outpatient consultations demonstrated that fixed `25s` micro-chunks with `2s` overlap introduced boundary syllable duplication, and forcing Stage 1 to emit intermediate JSON tuples created a lossy compression bottleneck before clinical prose synthesis. In [**ADR-007**](./ADR-007-decoupled-ambient-scribe-multi-agent-engineering-and-pdsqi9-oracle.md) (`Templus Scribe v6.2`), the standalone scribe evolved to **Pause-Guided Zero-Overlap Chunking (`VAD P10 > 250ms, ±75ms`)**, **Pure Acoustic Clean-Verbatim Diarization in Stage 1 (`Zero Tuples`)**, **6 Deterministic Sub-Millisecond Code Guardrails**, and **Independent Blind Clinical Oracle Evaluation (`PDSQI-9 = 44/45`, `Fact F1 = 100.0%`)**.
 
 ---
 

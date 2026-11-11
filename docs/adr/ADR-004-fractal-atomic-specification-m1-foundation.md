@@ -2,7 +2,7 @@
 
 * **Status:** Accepted
 * **Date:** 2026-11-03
-* **Author:** Guilherme Trentini, DDS (Clinical Product Lead & Health Informatics Practitioner, directing AI agents via Clinical Macro/Micromanagement)
+* **Author:** Guilherme Trentini, DDS (Senior Dental & Facial Surgeon | Clinical Product & Workflow Advisor, orchestrating Multi-Agent AI in OpenCode)
 
 ---
 

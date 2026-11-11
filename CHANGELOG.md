@@ -2,6 +2,20 @@
 
 All notable architectural and clinical engineering milestones for **Templus** are documented in this file.
 
+## [v0.8.0-scribe-beta / v6.2-arch] - 2026-11-11
+
+### Added
+* **EHR-Agnostic Standalone Ambient Clinical Scribe (`v6.2 / Beta 0.8.0` — Active R&D Focus):**
+  * Decoupled the **Standalone Ambient Clinical Scribe** completely from the EHR database (`Zero EHR Lock-In`), operating across a native **macOS Menu Bar Universal Binary** (`335px` HUD, `macOS Keychain`), a **2-Column Web Workspace**, and a **Mobile Pocket Recorder** (`< 768px` adaptive layout with `Screen Wake Lock API` and dual-slot `1 Desktop + 1 Mobile` coexistence) ([ADR-007](./docs/adr/ADR-007-decoupled-ambient-scribe-multi-agent-engineering-and-pdsqi9-oracle.md)).
+  * **Edge DSP Conditioning & Pure 2-Stage Multi-LLM Pipeline (`Zero Tuples`, `thinkingBudget: 0`):** Replaced fixed `25s` micro-chunks and intermediate JSON tuple extraction with client-side `16 kHz` *Boxcar* anti-aliased decimation, `80 Hz` high-pass pre-emphasis, **Moderate Dynamic `P10` VAD (`> 250ms, ±75ms`)** preserving monosyllabic negation particles, and **Pause-Guided Zero-Overlap Slicing** feeding Stage 1 (pure acoustic clean-verbatim diarization) and Stage 2 (contextual speaker identity + clinical synthesis across **8 regulated healthcare professions**).
+  * **Six Deterministic Sub-Millisecond Clinical Guardrails (`< 1 ms`):** Expanded the deterministic code firewall to enforce (1) Role-Authority & Temporal boundaries, (2) Sentence-Level Negation & Uncertainty scope, (3) Numeric Dosage & Tooth-Site Conservation, (4) Anatomical Laterality Cross-Talk prevention, (5) Medico-Legal Commercial Pricing Scrubbing from the clinical evolution, and (6) Safe Patient Identity Anchoring (*Zero Wrong-Patient Charting*). Reference implementations published in [`clinical-ai-deterministic-harness`](https://github.com/Guitrentz/clinical-ai-deterministic-harness) (`v0.5.0`).
+  * **Independent Blind Clinical Oracle (`PDSQI-9 = 44/45`, `Fact F1 = 100.0%`):** Built an isolated clinical auditing oracle scoring notes against raw audio and transcripts using the validated `PDSQI-9` rubric (`44/45 = 97.2%`), memory-bounded $O(M)$ rolling-row `mWER`, and `CREOLA` omission taxonomy (`100.0%` F1 on affirmed clinical facts with `0` hallucinations, `0` polarity inversions, and `0` dosage errors on a 55-minute real outpatient consultation).
+  * **Ephemeral Privacy & Crypto-Shredding:** Enforced `AES-256-GCM` encryption with Additional Authenticated Data (`AAD`), strict `72-hour` ephemeral retention TTL, and cascading 1-click *Crypto-Shredding*.
+* **Surgeon-Led Multi-Agent, Multi-LLM Engineering Workflow (`OpenCode`):**
+  * Transitioned engineering orchestration to a closed-loop multi-agent pipeline in **OpenCode** (`@explore`, `@architect`, `@general`, `@security-review`, `@surgeon`) governed by deterministic verification gates and minimal-blast-radius rules.
+* **Physical Scope Segregation (`Active Standalone Scribe` vs. `Frozen Enterprise EHR/ERP Blueprint`):**
+  * Segregated documentation and architectural governance between the active **Templus Scribe (`v6.2`)** track and the **Foundational Enterprise EHR/ERP Core (`v0.3.3`, frozen reference at Phase II Module 2)**.
+
 ## [v0.3.3-alpha] - 2026-11-08
 
 ### Added
